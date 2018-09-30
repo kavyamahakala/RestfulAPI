@@ -1,1 +1,7 @@
 # RestfulAPI
+
+This project is done using the Restful web service in order to host the weather information. The data set that was considered to host the information was the weather datset containing the daily weather data for cincinnati for last 3 years with three attributes - DATE, TMAX, TMIN The data file was read directly into cloud instead of using databases. The programming language used is python. The assignment is aimed at executing the following tasks [1] List of all dates [2] Information related to a particular date [3] Posting new weather information [4] Deleting weather information
+
+The first two tasks can be completed using browser, but in order to implement the third task we need postman
+
+We use the following URL for executing task 1 : http://ec2-18-219-197-159.us-east-2.compute.amazonaws.com:5000/historical/ For task 2 : http://ec2-18-219-197-159.us-east-2.compute.amazonaws.com:5000/historical/{parameter} For task 3 : http://ec2-18-219-197-159.us-east-2.compute.amazonaws.com:5000/historical/ - After executing this with post method, the specified data is pushed on the dataset at the end. The data to be posted is entered in the following format, {"date":"DATE","temp_max":TEMP_MAX,"temp_min":TEMP_MIN} For task 4 : http://ec2-18-219-197-159.us-east-2.compute.amazonaws.com:5000/historical/{parameter} - Using the delete method, the parameter/date mentioned in the URL will be deleted
